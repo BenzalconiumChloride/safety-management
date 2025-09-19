@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafetyHub - OSH Reports Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-content">
+            <a href="#" class="logo">Safety<span style="color: #fff;">Hub</span></a>
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Search reports...">
+            </div>
+            <button class="upload-btn">Upload</button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav">
+        <div class="nav-content">
+            <a href="#" class="nav-item active">Home</a>
+            <a href="#" class="nav-item">Categories</a>
+            <a href="#" class="nav-item">Live</a>
+            <a href="#" class="nav-item">Popular</a>
+            <a href="#" class="nav-item">Trending</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Chapter IV: <span class="highlight">Covered</span> Workplaces</h1>
+            <p class="hero-subtitle">
+                RA 11058 is the Philippine Occupational Safety and Health (OSH) Law, enacted in 2018 to strengthen
+                workplace safety and health standards by requiring employers to provide safe working conditions and
+                training, and to penalize violations.
+            </p>
+
+            <div class="hero-cta">
+                <button class="cta-button"
+                    onclick="document.getElementById('lowrisk').scrollIntoView({behavior: 'smooth'})">
+                    Explore Reports
+                </button>
+            </div>
+
+            <div class="hero-featured">
+                <a href="#lowRiskModal" class="featured-card">
+                    <div class="featured-thumbnail">
+                        <div class="featured-badge">Featured</div>
+                        📊
+                    </div>
+                    <div class="featured-info">
+                        <div class="featured-title">Low Risk Establishments</div>
+                        <div class="featured-meta">
+                            <span>👁 2.1K views</span>
+                            <span>👍 96%</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#financialModal" class="featured-card">
+                    <div class="featured-thumbnail">
+                        <div class="featured-badge">Hot</div>
+                        💰
+                    </div>
+                    <div class="featured-info">
+                        <div class="featured-title">Financial Health Check</div>
+                        <div class="featured-meta">
+                            <span>👁 3.2K views</span>
+                            <span>👍 98%</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#competitiveModal" class="featured-card">
+                    <div class="featured-thumbnail">
+                        <div class="featured-badge">Trending</div>
+                        🎯
+                    </div>
+                    <div class="featured-info">
+                        <div class="featured-title">Competitive Analysis Summary</div>
+                        <div class="featured-meta">
+                            <span>👁 2.5K views</span>
+                            <span>👍 95%</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2 class="section-title" id="lowrisk">Low Risk Establishments</h2>
+        <div class="video-grid">
+            <a href="#lowRiskModal" class="video-card">
+                <div class="video-thumbnail">
+                    📊
+                    <div class="duration">24:15</div>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Low Risk Establishments</div>
+                    <div class="video-stats">
+                        <div>👁 2.1K views</div>
+                        <div>👍 96%</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#marketingModal" class="video-card">
+                <div class="video-thumbnail">
+                    📈
+                    <div class="duration">18:42</div>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Marketing Campaign ROI Breakdown</div>
+                    <div class="video-stats">
+                        <div>👁 1.8K views</div>
+                        <div>👍 94%</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#financialModal" class="video-card">
+                <div class="video-thumbnail">
+                    💰
+                    <div class="duration">31:20</div>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Financial Health Check - Monthly Review</div>
+                    <div class="video-stats">
+                        <div>👁 3.2K views</div>
+                        <div>👍 98%</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#customerModal" class="video-card">
+                <div class="video-thumbnail">
+                    👥
+                    <div class="duration">22:10</div>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Customer Satisfaction Survey Results</div>
+                    <div class="video-stats">
+                        <div>👁 1.5K views</div>
+                        <div>👍 92%</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#operationsModal" class="video-card">
+                <div class="video-thumbnail">
+                    ⚙️
+                    <div class="duration">27:35</div>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Operational Efficiency Metrics Dashboard</div>
+                    <div class="video-stats">
+                        <div>👁 987 views</div>
+                        <div>👍 91%</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#competitiveModal" class="video-card">
+                <div class="video-thumbnail">
+                    🎯
+                    <div class="duration">29:18</div>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Competitive Analysis Q3 Summary</div>
+                    <div class="video-stats">
+                        <div>👁 2.5K views</div>
+                        <div>👍 95%</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- -----------------------------------------------------------------High Risk Establishments starts here------------------------------------------------------------------ -->
+        <h2 class="section-title">High Risk Establishments</h2>
+        <div class="video-grid">
+            <a href="#highRiskModal" class="video-card">
+                <div class="video-thumbnail">
+                    ⚠️
+                    <div class="duration">26:45</div>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">High Risk Establishments</div>
+                    <div class="video-stats">
+                        <div>👁 2.8K views</div>
+                        <div>👍 97%</div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <h2 class="section-title">Recently Added</h2>
+        <div class="video-grid">
+            <a href="#hrModal" class="video-card">
+                <div class="video-thumbnail">
+                    👤
+                    <div class="duration">19:45</div>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">HR Performance and Retention Analysis</div>
+                    <div class="video-stats">
+                        <div>👁 1.2K views</div>
+                        <div>👍 89%</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#techModal" class="video-card">
+                <div class="video-thumbnail">
+                    💻
+                    <div class="duration">33:22</div>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Technology Infrastructure Assessment</div>
+                    <div class="video-stats">
+                        <div>👁 856 views</div>
+                        <div>👍 93%</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#highRiskModal" class="video-card">
+                <div class="video-thumbnail">
+                    ⚠️
+                    <div class="duration">26:45</div>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">High Risk Establishments</div>
+                    <div class="video-stats">
+                        <div>👁 2.8K views</div>
+                        <div>👍 97%</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#mediumRiskModal" class="video-card">
+                <div class="video-thumbnail">
+                    🟡
+                    <div class="duration">28:30</div>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Medium Risk Establishments</div>
+                    <div class="video-stats">
+                        <div>👁 2.3K views</div>
+                        <div>👍 94%</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Low Risk Establishments Modal -->
+    <div id="lowRiskModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Low Risk Establishments</h2>
+                <a href="#" class="close">&times;</a>
+            </div>
+            <div class="modal-body">
+                <div class="video-player">
+                    <div class="slides-frame">
+                        <div>
+                            <h4 class="indention">
+                                Defined as workplaces with a low level of danger or exposure to safety and health
+                                hazards, and with low probability of
+                                accidents or occupational illnesses.
+                            </h4>
+                            <h4 class="indention">
+                                OSH program requirements focus on basic hazard identification, risk assessment, and
+                                control; medical surveillance for
+                                early detection; and first aid/emergency medical services.
+                            </h4>
+                            <h4 class="indention">
+                                These programs are simpler and typically apply to establishments with fewer workers or
+                                lower hazard exposure.
+                            </h4>
+                            <h4 class="indention">
+                                Additional promotion of health domains such as drug-free workplace, mental health
+                                services, and healthy lifestyles are
+                                included.
+                            </h4>
+                            <h4 class="indention">
+                                Example: establishments with less than 10 workers or 10-50 workers if classified low
+                                risk.
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-sidebar">
+                    <div class="video-details">
+                        <h6>Low Risk Establishments</h6>
+                        <div class="video-meta">
+                            <div>Views: 2.1K</div>
+                            <div>Rating: 96%</div>
+                            <div>Duration: 24:15</div>
+                            <div>Added: 2 days ago</div>
+                        </div>
+                        <div class="video-description">
+                            Covered Workplaces IV: Occupational Safety and Health Programs Low Risk Establishments -
+                            Comprehensive guide to understanding and implementing OSH programs for low-risk workplace
+                            environments.
+                        </div>
+                        <div class="tags">
+                            <span class="badge bg-primary">Low Risk</span>
+                            <span class="badge bg-warning">OSH Programs</span>
+                            <span class="badge bg-secondary">Establishments</span>
+                            <span class="badge bg-primary">Safety</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn btn-secondary">Close</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Medium Risk Establishments Modal -->
+    <div id="mediumRiskModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Medium Risk Establishments</h2>
+                <a href="#" class="close">&times;</a>
+            </div>
+            <div class="modal-body">
+                <div class="video-player">
+                    <div class="slides-frame">
+                        <div>
+                            <h4 class="indention">
+                                Defined as workplaces with moderate exposure to safety and health hazards, with medium
+                                probability of
+                                accidents or occupational illnesses.
+                            </h4>
+                            <h4 class="indention">
+                                OSH program requirements include systematic hazard identification, risk assessment, and
+                                appropriate control measures.
+                            </h4>
+                            <h4 class="indention">
+                                These programs require designated safety personnel, regular safety training, and
+                                emergency response procedures.
+                            </h4>
+                            <h4 class="indention">
+                                Periodic health surveillance, workplace monitoring, and safety audits are required.
+                            </h4>
+                            <h4 class="indention">
+                                Example: establishments with 10-50 workers, moderate machinery use, or limited exposure
+                                to hazardous materials.
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-sidebar">
+                    <div class="video-details">
+                        <h6>Medium Risk Establishments</h6>
+                        <div class="video-meta">
+                            <div>Views: 2.3K</div>
+                            <div>Rating: 94%</div>
+                            <div>Duration: 28:30</div>
+                            <div>Added: 3 days ago</div>
+                        </div>
+                        <div class="video-description">
+                            Covered Workplaces IV: Occupational Safety and Health Programs Medium Risk Establishments -
+                            Guidelines for implementing OSH programs in medium-risk workplace environments.
+                        </div>
+                        <div class="tags">
+                            <span class="badge bg-warning">Medium Risk</span>
+                            <span class="badge bg-warning">OSH Programs</span>
+                            <span class="badge bg-secondary">Establishments</span>
+                            <span class="badge bg-warning">Safety</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn btn-secondary">Close</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Other modals with placeholder content -->
+    <div id="financialModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Financial Health Check - Monthly Review</h2>
+                <a href="#" class="close">&times;</a>
+            </div>
+            <div class="modal-body">
+                <div class="video-player">
+                    <div class="slides-frame">
+                        <div style="text-align: center; color: #fff;">
+                            <h3>Financial Health Check - Monthly Review</h3>
+                            <p>This section contains financial analysis and health check reports.</p>
+                            <p>Monthly review of financial metrics and performance indicators.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-sidebar">
+                    <div class="video-details">
+                        <h6>Financial Health Check</h6>
+                        <div class="video-meta">
+                            <div>Views: 3.2K</div>
+                            <div>Rating: 98%</div>
+                            <div>Duration: 31:20</div>
+                            <div>Added: 1 week ago</div>
+                        </div>
+                        <div class="video-description">
+                            Monthly financial health assessment and performance review.
+                        </div>
+                        <div class="tags">
+                            <span class="badge bg-primary">Finance</span>
+                            <span class="badge bg-secondary">Monthly</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn btn-secondary">Close</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="competitiveModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Competitive Analysis Q3 Summary</h2>
+                <a href="#" class="close">&times;</a>
+            </div>
+            <div class="modal-body">
+                <div class="video-player">
+                    <div class="slides-frame">
+                        <div style="text-align: center; color: #fff;">
+                            <h3>Competitive Analysis Q3 Summary</h3>
+                            <p>Quarterly competitive analysis and market positioning review.</p>
+                            <p>Strategic insights and competitive landscape assessment.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-sidebar">
+                    <div class="video-details">
+                        <h6>Competitive Analysis</h6>
+                        <div class="video-meta">
+                            <div>Views: 2.5K</div>
+                            <div>Rating: 95%</div>
+                            <div>Duration: 29:18</div>
+                            <div>Added: 4 days ago</div>
+                        </div>
+                        <div class="video-description">
+                            Q3 competitive analysis summary with market insights and strategic recommendations.
+                        </div>
+                        <div class="tags">
+                            <span class="badge bg-primary">Strategy</span>
+                            <span class="badge bg-warning">Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn btn-secondary">Close</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="marketingModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Marketing Campaign ROI Breakdown</h2>
+                <a href="#" class="close">&times;</a>
+            </div>
+            <div class="modal-body">
+                <div class="video-player">
+                    <div class="slides-frame">
+                        <div style="text-align: center; color: #fff;">
+                            <h3>Marketing Campaign ROI Breakdown</h3>
+                            <p>Detailed analysis of marketing campaign performance and return on investment.</p>
+                            <p>Campaign metrics, conversion rates, and budget allocation review.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-sidebar">
+                    <div class="video-details">
+                        <h6>Marketing ROI Analysis</h6>
+                        <div class="video-meta">
+                            <div>Views: 1.8K</div>
+                            <div>Rating: 94%</div>
+                            <div>Duration: 18:42</div>
+                            <div>Added: 5 days ago</div>
+                        </div>
+                        <div class="video-description">
+                            Comprehensive breakdown of marketing campaign ROI and performance metrics.
+                        </div>
+                        <div class="tags">
+                            <span class="badge bg-primary">Marketing</span>
+                            <span class="badge bg-secondary">ROI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn btn-secondary">Close</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="customerModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Customer Satisfaction Survey Results</h2>
+                <a href="#" class="close">&times;</a>
+            </div>
+            <div class="modal-body">
+                <div class="video-player">
+                    <div class="slides-frame">
+                        <div style="text-align: center; color: #fff;">
+                            <h3>Customer Satisfaction Survey Results</h3>
+                            <p>Comprehensive analysis of customer feedback and satisfaction metrics.</p>
+                            <p>Survey results, trends, and actionable insights for improvement.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-sidebar">
+                    <div class="video-details">
+                        <h6>Customer Satisfaction</h6>
+                        <div class="video-meta">
+                            <div>Views: 1.5K</div>
+                            <div>Rating: 92%</div>
+                            <div>Duration: 22:10</div>
+                            <div>Added: 6 days ago</div>
+                        </div>
+                        <div class="video-description">
+                            Customer satisfaction survey analysis and improvement recommendations.
+                        </div>
+                        <div class="tags">
+                            <span class="badge bg-primary">Customer</span>
+                            <span class="badge bg-warning">Survey</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn btn-secondary">Close</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="operationsModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Operational Efficiency Metrics Dashboard</h2>
+                <a href="#" class="close">&times;</a>
+            </div>
+            <div class="modal-body">
+                <div class="video-player">
+                    <div class="slides-frame">
+                        <div style="text-align: center; color: #fff;">
+                            <h3>Operational Efficiency Metrics Dashboard</h3>
+                            <p>Key performance indicators and operational efficiency measurements.</p>
+                            <p>Process optimization insights and productivity analysis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-sidebar">
+                    <div class="video-details">
+                        <h6>Operations Dashboard</h6>
+                        <div class="video-meta">
+                            <div>Views: 987</div>
+                            <div>Rating: 91%</div>
+                            <div>Duration: 27:35</div>
+                            <div>Added: 1 week ago</div>
+                        </div>
+                        <div class="video-description">
+                            Operational efficiency metrics and performance dashboard overview.
+                        </div>
+                        <div class="tags">
+                            <span class="badge bg-primary">Operations</span>
+                            <span class="badge bg-secondary">Metrics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn btn-secondary">Close</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="hrModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">HR Performance and Retention Analysis</h2>
+                <a href="#" class="close">&times;</a>
+            </div>
+            <div class="modal-body">
+                <div class="video-player">
+                    <div class="slides-frame">
+                        <div style="text-align: center; color: #fff;">
+                            <h3>HR Performance and Retention Analysis</h3>
+                            <p>Employee performance metrics and retention rate analysis.</p>
+                            <p>HR insights, talent management, and workforce optimization.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-sidebar">
+                    <div class="video-details">
+                        <h6>HR Analysis</h6>
+                        <div class="video-meta">
+                            <div>Views: 1.2K</div>
+                            <div>Rating: 89%</div>
+                            <div>Duration: 19:45</div>
+                            <div>Added: 2 days ago</div>
+                        </div>
+                        <div class="video-description">
+                            HR performance analysis and employee retention insights.
+                        </div>
+                        <div class="tags">
+                            <span class="badge bg-primary">HR</span>
+                            <span class="badge bg-warning">Performance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn btn-secondary">Close</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="techModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Technology Infrastructure Assessment</h2>
+                <a href="#" class="close">&times;</a>
+            </div>
+            <div class="modal-body">
+                <div class="video-player">
+                    <div class="slides-frame">
+                        <div style="text-align: center; color: #fff;">
+                            <h3>Technology Infrastructure Assessment</h3>
+                            <p>IT infrastructure evaluation and technology stack assessment.</p>
+                            <p>System performance, security analysis, and upgrade recommendations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-sidebar">
+                    <div class="video-details">
+                        <h6>Tech Assessment</h6>
+                        <div class="video-meta">
+                            <div>Views: 856</div>
+                            <div>Rating: 93%</div>
+                            <div>Duration: 33:22</div>
+                            <div>Added: 3 days ago</div>
+                        </div>
+                        <div class="video-description">
+                            Technology infrastructure assessment and improvement recommendations.
+                        </div>
+                        <div class="tags">
+                            <span class="badge bg-primary">Technology</span>
+                            <span class="badge bg-secondary">Infrastructure</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn btn-secondary">Close</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- High Risk Establishments Modal -->
+    <div id="highRiskModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Who This Implies To?</h2>
+                <a href="#" class="close">&times;</a>
+            </div>
+            <div class="modal-body">
+                <div class="video-player">
+                    <div class="slides-frame">
+                        <div>
+                            <h4>
+                                Medium Risks
+                            </h4>
+                            <p class="indention">Moderate exposure to hazards with a reasonable likelihood of injury/illness
+                                under normal conditions.</p>
+                            <h4>
+                                High Risks
+                            </h4>
+                            <p class="indention">Greater exposure, higher potential for severe incidents.</p>
+                            <div style="margin-left: 20px;">
+                                <ul>
+                                    <li>Heavy construction</li>
+                                    <li>Manufacturing with heavy machinery</li>
+                                    <li>Confined spaces</li>
+                                    <li>Chemical handling</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-sidebar">
+                    <div class="video-details">
+                        <h6>High Risk Establishments</h6>
+                        <div class="video-meta">
+                            <div>Views: 2.8K</div>
+                            <div>Rating: 97%</div>
+                            <div>Duration: 26:45</div>
+                            <div>Source:<i>source: https://natlex.ilo.org/</i></div>
+                        </div>
+                        <div class="video-description">
+                            Covered Workplaces IV: Occupational Safety and Health Programs High Risk Establishments -
+                            Detailed requirements and protocols for high-risk workplace safety management.
+                        </div>
+                        <div class="tags">
+                            <span class="badge bg-danger">High Risk</span>
+                            <span class="badge bg-warning">OSH Programs</span>
+                            <span class="badge bg-secondary">Establishments</span>
+                            <span class="badge bg-danger">Safety</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn btn-secondary">Close</a>
+            </div>
+        </div>
+    </div> 
+</body>
+
+</html>

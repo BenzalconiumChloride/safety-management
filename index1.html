@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReportHub</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-content">
+            <a href="#" class="logo">Safety<span style="color: #000;">Hub</span></a>
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Search reports...">
+            </div>
+            <button class="upload-btn">Upload</button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav">
+        <div class="nav-content">
+            <a href="#" class="nav-item active">Home</a>
+            <a href="#" class="nav-item">Categories</a>
+            <a href="#" class="nav-item">Live</a>
+            <a href="#" class="nav-item">Popular</a>
+            <a href="#" class="nav-item">Trending</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Chapter IV:<span class="highlight">Covered</span> Workplaces</h1>
+            <p class="hero-subtitle">
+                RA 11058 is the Philippine Occupational Safety and Health (OSH) Law, enacted in 2018 to strengthen workplace safety and health standards by requiring employers to provide safe working conditions and training, and to penalize violations.
+            </p>
+
+            <div class="hero-cta">
+                <button class="cta-button cta-primary" onclick="document.getElementById('videoGrid').scrollIntoView({behavior: 'smooth'})">
+                    Explore Reports
+                </button>
+
+            </div>
+
+            <div class="hero-featured">
+                <div class="featured-card" class="featured-card" data-bs-toggle="modal" data-bs-target="#CompetitiveAnalysis">
+                    <div class="featured-thumbnail">
+                        <div class="featured-badge">Featured</div>
+                        📊
+                    </div>
+                    
+                    <div class="featured-info">
+                        <div class="featured-title">Low Risk Establishments</div>
+                        <div class="featured-meta">
+                            <span>👁 2.1K views</span>
+                            <span>👍 96%</span>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="featured-card" onclick="openModal(3, 'Financial Health Check - Monthly Review')">
+                    <div class="featured-thumbnail">
+                        <div class="featured-badge">Hot</div>
+                        💰
+                    </div>
+                    <div class="featured-info">
+                        <div class="featured-title">Financial Health Check</div>
+                        <div class="featured-meta">
+                            <span>👁 3.2K views</span>
+                            <span>👍 98%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-card" onclick="openModal(6, 'Competitive Analysis Q3 Summary')">
+                    <div class="featured-thumbnail">
+                        <div class="featured-badge">Trending</div>
+                        🎯
+                    </div>
+                    <div class="featured-info">
+                        <div class="featured-title">Competitive Analysis Summary</div>
+                        <div class="featured-meta">
+                            <span>👁 2.5K views</span>
+                            <span>👍 95%</span>
+                        </div>
+                    </div>
+                </div>
+
+<!-- ---------------------------------------------------medium-to-high-------------------------------------------------------------------------- --> 
+                <div class="featured-card" data-bs-toggle="modal" data-bs-target="#CompetitiveAnalysis">
+                    <div class="featured-thumbnail">
+                        <div class="featured-badge">High Risks Establishments</div>
+                        🎯
+                    </div>
+                    <div class="featured-info">
+                        <div class="featured-title">Who are the High Risks Establishments</div>
+                        <div class="featured-meta">
+                            <span>👁 2.5K views</span>
+                            <span>👍 95%</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2 class="section-title" id="lowrisk">Low Risk Establishments</h2>
+        <div class="video-grid" >
+            <div class="featured-card" class="featured-card" data-bs-toggle="modal" data-bs-target="#CompetitiveAnalysis">
+                <div class="featured-thumbnail">
+                    <div class="featured-badge">Featured</div>
+                    📊
+                </div>
+                <div class="featured-info">
+                    <div class="featured-title">Low Risk Establishments</div>
+                    <div class="featured-meta">
+                        <span>👁 2.1K views</span>
+                        <span>👍 96%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Recently Added</h2>
+        <div class="video-grid" id="recentGrid">
+            <!-- Recent videos will be generated by JavaScript -->
+        </div>
+       
+    </div>
+<style>
+    .indention{
+        text-indent: 50px;
+    }
+</style>
+    <!-- Modal -->
+    <div class="modal fade" id="CompetitiveAnalysis" tabindex="-1" aria-labelledby="CompetitiveAnalysisLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="CompetitiveAnalysisLabel">Low Risk Establishments</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                </div>
+
+                <div class="modal-body d-flex">
+                    <!-- Left side: video/slides -->
+                    <div class="video-player flex-grow-1 me-3">
+                        <div class="slides-frame border p-3 text-center" id="slidesFrame">
+                              
+                            <div class="text-center">
+                                <div>
+                                    <h4 class="indention">
+                                        Defined as workplaces with a low level of danger or exposure to safety and health hazards, and with low probability of
+                                        accidents or occupational illnesses.
+                                    </h4>
+                                </div><br>
+                                <div>
+                                    <h4 class="indention">
+                                        OSH program requirements focus on basic hazard identification, risk assessment, and control; medical surveillance for
+                                        early detection; and first aid/emergency medical services.
+                                    </h4>
+                                </div><br>
+                                <div>
+                                    <h4 class="indention">
+                                        These programs are simpler and typically apply to establishments with fewer workers or lower hazard exposure.
+                                    </h4>
+                                </div><br>
+                                <div>
+                                    <h4 class="indention">
+                                        Additional promotion of health domains such as drug-free workplace, mental health services, and healthy lifestyles are
+                                        included.
+                                    </h4>
+                                </d><br>
+                                <div>
+                                    <h4 class="indention">
+                                        Example: establishments with less than 10 workers or 10-50 workers if classified low risk.
+                                    </h4>
+                                </div><br>
+                            </div>
+                           
+                        </div>
+                    </div>
+
+                    <!-- Right side: sidebar -->
+                    <div class="video-sidebar" style="width: 300px;">
+                        <div class="video-details">
+                            <h6 id="sidebarTitle">Low Risk Establishments</h6>
+                            <div class="video-meta small text-muted mb-2" id="videoMeta">
+                                <div>Views: <span id="viewCount">1,234</span></div>
+                                <div>Rating: <span id="ratingPercent">95%</span></div>
+                                <div>Duration: <span id="duration">25:30</span></div>
+                                <div>Added: <span id="dateAdded">2 days ago</span></div>
+                            </div>
+                            <div class="video-description mb-2" id="description">
+                                Covered Workplaces IV: Occupational Safety and Health Programs Low Risks Establishments Medium to High Risks Establishments
+                            </div>
+                            <div class="tags">
+                                <a href="#" class="badge bg-primary me-1">Low Risk</a>
+                                <a href="#" class="badge bg-warning me-1">Medium Risk</a>
+                                <a href="#" class="badge bg-danger me-1">High Risk</a>
+                                <a href="#" class="badge bg-secondary">Establishments</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle">Report Title</h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="video-player">
+                    <div class="slides-frame" id="slidesFrame">
+                        Your presentation slides will be embedded here
+                    </div>
+                </div>
+                <div class="video-sidebar">
+                    <div class="video-details">
+                        <h3 id="sidebarTitle">Report Title</h3>
+                        <div class="video-meta" id="videoMeta">
+                            <div>Views: <span id="viewCount">1,234</span></div>
+                            <div>Rating: <span id="ratingPercent">95%</span></div>
+                            <div>Duration: <span id="duration">25:30</span></div>
+                            <div>Added: <span id="dateAdded">2 days ago</span></div>
+                        </div>
+                        <div class="video-description" id="description">
+                            Covered Workplaces IV: Occupational Safety and Health Programs Low Risks Establishments Medium to High Risks Establishments
+                        </div>
+                        <div class="tags">
+                            <a href="#" class="tag">Low Risk</a>
+                            <a href="#" class="tag">Medium Risk</a>
+                            <a href="#" class="tag">High Risk</a>
+                            <a href="#" class="tag">Establishments</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- modal for medium-to-high -->
+    <!-- Modal for Competitive Analysis -->
+    <div id="CompetitiveAnalysisModal" class="modal fade">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="CompetitiveAnalysisLabel">Competitive Analysis</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                </div>
+
+                <div class="modal-body d-flex">
+                    <!-- Left side: video/slides -->
+                    <div class="video-player flex-grow-1 me-3">
+                        <div class="slides-frame border p-3 text-center" id="CompetitiveAnalysisSlidesFrame">
+                            Your competitive analysis slides will be embedded here
+                        </div>
+                    </div>
+
+                    <!-- Right side: sidebar -->
+                    <div class="video-sidebar" style="width: 300px;">
+                        <div class="video-details">
+                            <h6 id="CompetitiveAnalysisSidebarTitle">Competitive Analysis</h6>
+                            <div class="video-meta small text-muted mb-2" id="CompetitiveAnalysisVideoMeta">
+                                <div>Views: <span id="CompetitiveAnalysisViewCount">1,234</span></div>
+                                <div>Rating: <span id="CompetitiveAnalysisRatingPercent">95%</span></div>
+                                <div>Duration: <span id="CompetitiveAnalysisDuration">25:30</span></div>
+                                <div>Added: <span id="CompetitiveAnalysisDateAdded">2 days ago</span></div>
+                            </div>
+                            <div class="video-description mb-2" id="CompetitiveAnalysisDescription">
+                                Covered Workplaces IV: Occupational Safety and Health Programs Low Risks Establishments Medium to High Risks Establishments
+                            </div>
+                            <div class="tags">
+                                <a href="#" class="badge bg-primary me-1">Low Risk</a>
+                                <a href="#" class="badge bg-warning me-1">Medium Risk</a>
+                                <a href="#" class="badge bg-danger me-1">High Risk</a>
+                                <a href="#" class="badge bg-secondary">Establishments</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    <script>
+        // Sample video data
+        const reports = [{
+                id: 1,
+                title: "Low Risk Establishments",
+                views: "2.1K",
+                rating: "96%",
+                duration: "24:15",
+                category: "Low Risk",
+                thumbnail: "📊"
+
+            },
+            {
+                id: 2,
+                title: "Marketing Campaign ROI Breakdown",
+                views: "1.8K",
+                rating: "94%",
+                duration: "18:42",
+                category: "Marketing",
+                thumbnail: "📈"
+            },
+            {
+                id: 3,
+                title: "Financial Health Check - Monthly Review",
+                views: "3.2K",
+                rating: "98%",
+                duration: "31:20",
+                category: "Finance",
+                thumbnail: "💰"
+            },
+            {
+                id: 4,
+                title: "Customer Satisfaction Survey Results",
+                views: "1.5K",
+                rating: "92%",
+                duration: "22:10",
+                category: "Customer",
+                thumbnail: "👥"
+            },
+            {
+                id: 5,
+                title: "Operational Efficiency Metrics Dashboard",
+                views: "987",
+                rating: "91%",
+                duration: "27:35",
+                category: "Operations",
+                thumbnail: "⚙️"
+            },
+            {
+                id: 6,
+                title: "Competitive Analysis Q3 Summary",
+                views: "2.5K",
+                rating: "95%",
+                duration: "29:18",
+                category: "Strategy",
+                thumbnail: "🎯"
+            },
+            {
+                id: 7,
+                title: "HR Performance and Retention Analysis",
+                views: "1.2K",
+                rating: "89%",
+                duration: "19:45",
+                category: "HR",
+                thumbnail: "👤"
+            },
+            {
+                id: 8,
+                title: "Technology Infrastructure Assessment",
+                views: "856",
+                rating: "93%",
+                duration: "33:22",
+                category: "IT",
+                thumbnail: "💻"
+            }
+        ];
+
+        function createVideoCard(report) {
+            return `
+                <div class="video-card" onclick="openModal(${report.id}, '${report.title}')">
+                    <div class="video-thumbnail">
+                        <div class="thumbnail-image">${report.thumbnail}</div>
+                        <div class="duration">${report.duration}</div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-title">${report.title}</div>
+                        <div class="video-stats">
+                            <div class="views">👁 ${report.views}</div>
+                            <div class="rating positive">👍 ${report.rating}</div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Populate grids
+        function populateGrids() {
+            const videoGrid = document.getElementById('videoGrid');
+            const recentGrid = document.getElementById('recentGrid');
+
+            // Featured reports (first 6)
+            videoGrid.innerHTML = reports.slice(0, 6).map(createVideoCard).join('');
+
+            // Recent reports (last 4)
+            recentGrid.innerHTML = reports.slice(-4).map(createVideoCard).join('');
+        }
+
+        function openModal(reportId, reportTitle) {
+            const modal = document.getElementById('videoModal');
+            const modalTitle = document.getElementById('modalTitle');
+            const sidebarTitle = document.getElementById('sidebarTitle');
+            const report = reports.find(r => r.id === reportId);
+
+            modal.style.display = 'block';
+            modalTitle.textContent = reportTitle;
+            sidebarTitle.textContent = reportTitle;
+
+            if (report) {
+                document.getElementById('viewCount').textContent = report.views;
+                document.getElementById('ratingPercent').textContent = report.rating;
+                document.getElementById('duration').textContent = report.duration;
+            }
+
+            // Load slides here
+            loadSlides(reportId);
+        }
+
+        function closeModal() {
+            document.getElementById('videoModal').style.display = 'none';
+        }
+
+        function loadSlides(reportId) {
+            const slidesFrame = document.getElementById('slidesFrame');
+            const report = reports.find(r => r.id === reportId);
+
+            if (report) {
+                slidesFrame.innerHTML = `
+                    <div style="text-align: center; color: #333;">
+                        <h3>${report.title} </h3>
+                        <p>Embed your presentation slides here</p>
+                        <p>You can use iframe, embed, or custom content</p>
+                    </div>
+                    
+                `;
+            } else {
+                slidesFrame.innerHTML = `<p>No slides found for report ${reportId}</p>`;
+            }
+        }
+
+
+
+        // Initialize
+        populateGrids();
+    </script>
+</body>
+
+</html>
