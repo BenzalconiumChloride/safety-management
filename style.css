@@ -413,3 +413,80 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+
+
+.roles {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.roles__title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: -0.2px;
+}
+
+/* List container - each row is a grid with 3 columns */
+.role-row {
+    display: grid;
+    grid-template-columns: var(--label-w) var(--colon-w) 1fr;
+    gap: var(--gap);
+    align-items: start;
+    padding: 10px 8px;
+    border-bottom: 1px solid rgba(196, 136, 7, 0.06);
+}
+
+.role-row:last-child {
+    border-bottom: none;
+}
+
+.role-label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #bf8207;
+    white-space: nowrap;
+    align-self: center;
+}
+
+.role-colon {
+    text-align: center;
+    font-weight: 700;
+    color: #0b1220;
+    font-size: 16px;
+    padding-top: 2px;
+}
+
+.role-desc {
+    font-size: 14px;
+    line-height: 1.45;
+    color: var(--muted);
+}
+
+/* small screens: make it two rows per item */
+@media (max-width: 640px) {
+    .role-row {
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto auto;
+    }
+
+    .role-colon {
+        grid-row: 1 / 3;
+        align-self: center;
+    }
+
+    .role-label {
+        grid-column: 1 / -1;
+    }
+
+    .role-desc {
+        grid-column: 1 / -1;
+    }
+}
+
+/* Utility: emphasize parts of description */
+.role-desc b {
+    color: #0b1220;
+    font-weight: 600;
+}
