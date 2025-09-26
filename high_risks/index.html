@@ -10,328 +10,362 @@
   </head>
     
   <body>
-  <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
-  <div class="container-lg">
-    <a class="navbar-brand fw-bold" href="#">OSH</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#hero">Introduction</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#services">Programs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">Basis</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Definition of Terms</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#testimonials">Reporters</a>
-        </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<section class="hero" id="hero">
-  <div class="container-lg">
-    <div class="row align-items-center">
-      <div class="col-sm-6">
-        <h4 class="display-2 fw-bold">Occupational Safety and Health Program</h4>
-        <br> 
-        <h5>Covered workplaces shall develop and implement a suitable OSH
-        program which shall be posted in prominent places. Covered
-        workplaces shall be guided by a format prescribed by DOLE.
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+      <div class="container-lg">
+        <a class="navbar-brand fw-bold" href="#">OSH</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#hero">Introduction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Basis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Definition of Terms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Reporters</a>
+            </li>
+          </ul>
+          <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+            <i class="bi bi-moon-fill" id="theme-icon"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  
+    <section class="hero" id="hero">
+      <div class="container-lg">
+        <div class="row align-items-center">
+          <div class="col-sm-6">
+            <h4 class="display-2 fw-bold">Occupational Safety and Health Program</h4>
+            <br>
+            <h5>Covered workplaces shall develop and implement a suitable OSH
+              program which shall be posted in prominent places. Covered
+              workplaces shall be guided by a format prescribed by DOLE.
+            </h5>
+          </div>
+          <div class="col-sm-6 text-center">
+            <img src="./img/so1.png" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="display-5 fw-bold mb-4">Programs</h2>
+        <h5>
+          For medium to high risk establishments with ten (10) to fifty (50)
+          workers and low to high risk establishments with fifty-one (51) workers
+          and above. – The OSH program, which shall be duly signed by the
+          employer, must include at least the following:
         </h5>
-      </div>
-      <div class="col-sm-6 text-center">
-        <img src="./img/so1.png" class="img-fluid" alt="">
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="services" id="services">
-  <div class="container">
-    <h2 class="display-5 fw-bold mb-4">Programs</h2>
-    <h5>
-      For medium to high risk establishments with ten (10) to fifty (50)
-      workers and low to high risk establishments with fifty-one (51) workers
-      and above. – The OSH program, which shall be duly signed by the
-      employer, must include at least the following:
-    </h5>
-<br>
-    <div class="services-slider">
-      <div class="card" data-bs-toggle="modal" data-bs-target="#workplace">
-        <i class="bi bi-exclamation-triangle-fill"></i>
-        <div class="card-body">
-          <h5 class="card-title fw-bold">Work Place</h5>
-          <p class="card-text">
-            The OSH program shall be communicated and be made readily
-            available to all persons in the workplace.
-          </p>
-        </div>
-      </div>
-
-      <div class="card" data-bs-toggle="modal" data-bs-target="#company">
-        <i class="bi bi-exclamation-triangle-fill"></i>
-        <div class="card-body">
-          <h5 class="card-title fw-bold">Company</h5>
-          <p class="card-text">
-            The company shall ensure that the core elements of OSH program
-            are integrated in the company OSH program.
-          </p>
-        </div>
-      </div>
-
-      <div class="card" data-bs-toggle="modal" data-bs-target="#requirements">
-        <i class="bi bi-exclamation-triangle-fill"></i>
-        <div class="card-body">
-          <h5 class="card-title fw-bold">OSH Requirements</h5>
-          <p class="card-text">
-            The company shall submit a copy of the OSH program to
-            the DOLE Regional, Provincial, Field or Satellite Office
-            having jurisdiction over the workplace.
-          </p>
-        </div>
-      </div>
-
-      <div class="card" data-bs-toggle="modal" data-bs-target="#modification">
-        <i class="bi bi-exclamation-triangle-fill"></i>
-        <div class="card-body">
-          <h5 class="card-title fw-bold">Program Modification</h5>
-          <p class="card-text">
-            OSH programs in the pre-approved template may be
-            modified by DOLE as necessary based on existing
-            laws, rules and regulations, and other issuances or
-            upon validation of the program during inspection.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="about" id="about">
-  <div class="container">
-    <h2 class="display-5 fw-bold mb-4">BASIS</h2>
-    <p>AN ACT STRENGTHENING COMPLIANCE
-    WITH OCCUPATIONAL SAFETY AND
-    HEALTH STANDARDS AND PROVIDING
-    PENALTIES FOR VIOLATIONS THEREOF
-    (RA 11058) and IRR (DOLE DO 198 – 18)</p>
-  </div>
-</section>
-
-<section class="projects" id="projects">
-  <div class="container">
-    <h2 class="display-5 fw-bold mb-4">DEFINITION OF TERMS</h2>
-    <div class="row">
-      <div class="col-lg col-sm-6 mt-4">
-        <div class="card">
-          <img src="https://codingyaar.com/wp-content/uploads/image-plcaeholder.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title fw-bold">Covered Workplaces</h5>
-            <p class="card-text">refers to establishments,
-            projects, sites and all
-            other places where work
-            is being undertaken
-            wherein the number of
-            employees, nature of
-            operations and risk or
-            hazard involved in the
-            business require
-            compliance
-            </p>
-            <a href="#" class="btn btn-outline-dark">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg col-sm-6 mt-4">
-        <div class="card">
-          <img src="https://codingyaar.com/wp-content/uploads/image-plcaeholder.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title fw-bold">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-              of the card's content.</p>
-            <a href="#" class="btn btn-outline-dark">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg col-sm-6 mt-4">
-        <div class="card">
-          <img src="https://codingyaar.com/wp-content/uploads/image-plcaeholder.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title fw-bold">Medium Risks Establishment</h5>
-            <p class="card-text">“Medium risk establishment” refers to a
-            workplace where there is moderate
-            exposure to safety and health hazards and
-            with probability of an accident, injury or
-            illness, if no preventive or control measures
-            are in place.</p>
-            <a href="#" class="btn btn-outline-dark">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg col-sm-6 mt-4">
-        <div class="card">
-          <img src="https://codingyaar.com/wp-content/uploads/image-plcaeholder.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title fw-bold">High Risks Establishments</h5>
-            <p class="card-text">“High risk establishment” refers to a
-            workplace wherein the presence of
-            hazard or potential hazard within the
-            company may affect the safety and/or
-            health of workers not only within but
-            also persons outside the premises of
-            the workplace (e.g. construction,
-            mining, petrochemical, etc.)</p>
-            <a href="#" class="btn btn-outline-dark">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="testimonials" id="testimonials">
-  <div class="container">
-    <h2 class="display-5 fw-bold mb-4">Yours Truly</h2>
-    <div id="carouselExample" class="carousel slide carousel-dark carousel-fade">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <p>Low Risks Establishments</p>
-          <h5>Kevin Cortez</h5>
-        </div>
-        <div class="carousel-item">
-          <p>Medium-to-High Risks Establishments Program</p>
-          </p>
-          <h5>Benz A. Lozada</h5>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
-</section>
-
-
-<footer class="text-center p-3 bg-body-tertiary">
-  <div>&copy; 2025. All Rights Reserved.</div>
-</footer>
-
-
-<!-- modals -->
-<!-- Modal for Workplace -->
-<div class="modal fade" id="workplace" tabindex="-1" aria-labelledby="workplaceModalLabel" aria-hidden="true" data-bs-modal-fullscreen="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="workplaceModalLabel">Workplace</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p>It shall be updated
-        periodically whenever the DOLE, other regulatory or government
-        agencies and institutions promulgate new rules, guidelines and other issuances related to workers’ safety and health.</p>
-        <div class="col-12 d-flex align-items-center justify-content-center">
-          <img src="./img/workplace.png" class="img-fluid mx-auto d-block" alt="..." width="200px" height="200px">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- company modal -->
-<div class="modal fade" id="company" tabindex="-1" aria-labelledby="companyModalLabel" aria-hidden="true"
-  data-bs-modal-fullscreen="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="workplaceModalLabel">Company</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p>such as management
-        commitment and employee involvement, workplace risk assessment, hazard prevention and control, safety and health
-        training and
-        education, and OSH program evaluation.</p>
-        <div class="col-12 d-flex align-items-center justify-content-center">
-          <img src="./img/company.png" class="img-fluid mx-auto d-block" alt="..." width="200px" height="200px">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- requirements -->
-<div class="modal fade" id="requirements" tabindex="-1" aria-labelledby="companyModalLabel" aria-hidden="true"
-  data-bs-modal-fullscreen="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="workplaceModalLabel">Requirements</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p>A duly signed
-        company commitment to comply OSH requirements
-        together with the company OSH program using the
-        prescribed template shall be considered approved upon
-        submission EXCEPT for Construction Safety and Health
-        Program (CSHP) which shall need approval by DOLE prior
-        to construction.</p>
-        <div class="col-12 d-flex align-items-center justify-content-center">
-          <img src="./img/compliance.png" class="img-fluid mx-auto d-block" alt="..." width="200px" height="200px">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- modification -->
-<div class="modal fade" id="modification" tabindex="-1" aria-labelledby="modificationModalLabel" aria-hidden="true"
-  data-bs-modal-fullscreen="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="workplaceModalLabel">Program Modification</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p>If
-        there is a modification made by the company, the
-        company shall submit a revised copy of the OSH
-        program to DOLE.</p>
         <br>
-        <p>
-          The company shall review and evaluate the OSH
-          program at least once a year or as necessary, to
-          ensure that its objectives are met towards an
-          improved safety and health performance.
-        </p>
-        <div class="col-12 d-flex align-items-center justify-content-center">
-          <img src="./img/compliance.png" class="img-fluid mx-auto d-block" alt="..." width="200px" height="200px">
+        <div class="services-slider">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#workplace">
+            <i class="bi bi-exclamation-triangle-fill"></i>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Work Place</h5>
+              <p class="card-text">
+                The OSH program shall be communicated and be made readily
+                available to all persons in the workplace.
+              </p>
+            </div>
+          </div>
+  
+          <div class="card" data-bs-toggle="modal" data-bs-target="#company">
+            <i class="bi bi-exclamation-triangle-fill"></i>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Company</h5>
+              <p class="card-text">
+                The company shall ensure that the core elements of OSH program
+                are integrated in the company OSH program.
+              </p>
+            </div>
+          </div>
+  
+          <div class="card" data-bs-toggle="modal" data-bs-target="#requirements">
+            <i class="bi bi-exclamation-triangle-fill"></i>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">OSH Requirements</h5>
+              <p class="card-text">
+                The company shall submit a copy of the OSH program to
+                the DOLE Regional, Provincial, Field or Satellite Office
+                having jurisdiction over the workplace.
+              </p>
+            </div>
+          </div>
+  
+          <div class="card" data-bs-toggle="modal" data-bs-target="#modification">
+            <i class="bi bi-exclamation-triangle-fill"></i>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Program Modification</h5>
+              <p class="card-text">
+                OSH programs in the pre-approved template may be
+                modified by DOLE as necessary based on existing
+                laws, rules and regulations, and other issuances or
+                upon validation of the program during inspection.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="display-5 fw-bold mb-4">BASIS</h2>
+        <p>AN ACT STRENGTHENING COMPLIANCE
+          WITH OCCUPATIONAL SAFETY AND
+          HEALTH STANDARDS AND PROVIDING
+          PENALTIES FOR VIOLATIONS THEREOF
+          (RA 11058) and IRR (DOLE DO 198 – 18)</p>
+      </div>
+    </section>
+  
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="display-5 fw-bold mb-4">DEFINITION OF TERMS</h2>
+        <div class="row">
+          <div class="col-lg col-sm-6 mt-4">
+            <div class="card">
+              <img src="https://codingyaar.com/wp-content/uploads/image-plcaeholder.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Covered Workplaces</h5>
+                <p class="card-text">refers to establishments,
+                  projects, sites and all
+                  other places where work
+                  is being undertaken
+                  wherein the number of
+                  employees, nature of
+                  operations and risk or
+                  hazard involved in the
+                  business require
+                  compliance
+                </p>
+                <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-sm-6 mt-4">
+            <div class="card">
+              <img src="https://codingyaar.com/wp-content/uploads/image-plcaeholder.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                  of the card's content.</p>
+                <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-sm-6 mt-4">
+            <div class="card">
+              <img src="https://codingyaar.com/wp-content/uploads/image-plcaeholder.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Medium Risks Establishment</h5>
+                <p class="card-text">"Medium risk establishment" refers to a
+                  workplace where there is moderate
+                  exposure to safety and health hazards and
+                  with probability of an accident, injury or
+                  illness, if no preventive or control measures
+                  are in place.</p>
+                <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-sm-6 mt-4">
+            <div class="card">
+              <img src="https://codingyaar.com/wp-content/uploads/image-plcaeholder.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">High Risks Establishments</h5>
+                <p class="card-text">"High risk establishment" refers to a
+                  workplace wherein the presence of
+                  hazard or potential hazard within the
+                  company may affect the safety and/or
+                  health of workers not only within but
+                  also persons outside the premises of
+                  the workplace (e.g. construction,
+                  mining, petrochemical, etc.)</p>
+                <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <h2 class="display-5 fw-bold mb-4">Yours Truly</h2>
+        <div id="carouselExample" class="carousel slide carousel-dark carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p>Low Risks Establishments</p>
+              <h5>Kevin Cortez</h5>
+            </div>
+            <div class="carousel-item">
+              <p>Medium-to-High Risks Establishments Program</p>
+              <h5>Benz A. Lozada</h5>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  
+    <footer class="text-center p-3 bg-body-tertiary">
+      <div class="text-warning">&copy; 2025. All Rights Reserved.</div>
+    </footer>
+  
+    <!-- modals -->
+    <!-- Modal for Workplace -->
+    <div class="modal fade" id="workplace" tabindex="-1" aria-labelledby="workplaceModalLabel" aria-hidden="true"
+      data-bs-modal-fullscreen="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="workplaceModalLabel">Workplace</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>It shall be updated
+              periodically whenever the DOLE, other regulatory or government
+              agencies and institutions promulgate new rules, guidelines and other issuances related to workers' safety
+              and health.</p>
+            <div class="col-12 d-flex align-items-center justify-content-center">
+              <img src="./img/workplace.png" class="img-fluid mx-auto d-block" alt="..." width="200px" height="200px">
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-
+  
+    <!-- company modal -->
+    <div class="modal fade" id="company" tabindex="-1" aria-labelledby="companyModalLabel" aria-hidden="true"
+      data-bs-modal-fullscreen="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="companyModalLabel">Company</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>such as management
+              commitment and employee involvement, workplace risk assessment, hazard prevention and control, safety and
+              health
+              training and
+              education, and OSH program evaluation.</p>
+            <div class="col-12 d-flex align-items-center justify-content-center">
+              <img src="./img/company.png" class="img-fluid mx-auto d-block" alt="..." width="200px" height="200px">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- requirements -->
+    <div class="modal fade" id="requirements" tabindex="-1" aria-labelledby="requirementsModalLabel" aria-hidden="true"
+      data-bs-modal-fullscreen="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="requirementsModalLabel">Requirements</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>A duly signed
+              company commitment to comply OSH requirements
+              together with the company OSH program using the
+              prescribed template shall be considered approved upon
+              submission EXCEPT for Construction Safety and Health
+              Program (CSHP) which shall need approval by DOLE prior
+              to construction.</p>
+            <div class="col-12 d-flex align-items-center justify-content-center">
+              <img src="./img/compliance.png" class="img-fluid mx-auto d-block" alt="..." width="200px" height="200px">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- modification -->
+    <div class="modal fade" id="modification" tabindex="-1" aria-labelledby="modificationModalLabel" aria-hidden="true"
+      data-bs-modal-fullscreen="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modificationModalLabel">Program Modification</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>If
+              there is a modification made by the company, the
+              company shall submit a revised copy of the OSH
+              program to DOLE.</p>
+            <br>
+            <p>
+              The company shall review and evaluate the OSH
+              program at least once a year or as necessary, to
+              ensure that its objectives are met towards an
+              improved safety and health performance.
+            </p>
+            <div class="col-12 d-flex align-items-center justify-content-center">
+              <img src="./img/compliance.png" class="img-fluid mx-auto d-block" alt="..." width="200px" height="200px">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
     <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js'></script>
+    <script>
+      // Theme toggle functionality
+      function toggleTheme() {
+        const html = document.documentElement;
+        const themeIcon = document.getElementById('theme-icon');
+        const currentTheme = html.getAttribute('data-theme');
+
+        if (currentTheme === 'dark') {
+          html.removeAttribute('data-theme');
+          themeIcon.className = 'bi bi-moon-fill';
+          localStorage.setItem('theme', 'light');
+        } else {
+          html.setAttribute('data-theme', 'dark');
+          themeIcon.className = 'bi bi-sun-fill';
+          localStorage.setItem('theme', 'dark');
+        }
+      }
+
+      // Load saved theme on page load
+      document.addEventListener('DOMContentLoaded', function () {
+        const savedTheme = localStorage.getItem('theme');
+        const html = document.documentElement;
+        const themeIcon = document.getElementById('theme-icon');
+
+        if (savedTheme === 'dark') {
+          html.setAttribute('data-theme', 'dark');
+          themeIcon.className = 'bi bi-sun-fill';
+        } else {
+          themeIcon.className = 'bi bi-moon-fill';
+        }
+      });
+    </script>
   </body>
   
 </html>
