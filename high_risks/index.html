@@ -12,7 +12,12 @@
   <body>
     <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
       <div class="container-lg">
-        <a class="navbar-brand fw-bold" href="#">OSH</a>
+        <a class="navbar-brand fw-bold" href="#">OSH 
+          <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+          <i class="bi bi-moon-fill" id="theme-icon"></i>
+        </button>
+      </a>
+        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -35,9 +40,7 @@
               <a class="nav-link" href="#testimonials">Reporters</a>
             </li>
           </ul>
-          <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
-            <i class="bi bi-moon-fill" id="theme-icon"></i>
-          </button>
+          
         </div>
       </div>
     </nav>
@@ -52,6 +55,18 @@
               program which shall be posted in prominent places. Covered
               workplaces shall be guided by a format prescribed by DOLE.
             </h5>
+
+            <h4 class="display-2 fw-bold">Covered Workplaces</h4>
+            <h5>These are workplaces that fall under the jurisdiction of OSH laws (like the Philippines’ RA 11058 and DOLE DO 198-18, or
+            OSHA standards in other countries). Generally, coverage includes:</h5>
+            <ul>
+              <li>Private companies: All industries regardless of size, unless explicitly exempted.</li>
+              <li>Public sector offices: Government-owned and controlled corporations (GOCCs), sometimes LGUs</li>
+              <li>Contractors/Subcontractors: Both direct employers and project-based operations.</li>
+              <li>High-risk establishments: Construction sites, manufacturing plants, mining, healthcare facilities, and similar
+              industries where hazards are inherent.</li>
+
+            </ul>
           </div>
           <div class="col-sm-6 text-center">
             <img src="./img/so1.png" class="img-fluid" alt="">
@@ -69,6 +84,7 @@
           and above. – The OSH program, which shall be duly signed by the
           employer, must include at least the following:
         </h5>
+
         <br>
         <div class="services-slider">
           <div class="card" data-bs-toggle="modal" data-bs-target="#workplace">
@@ -117,6 +133,27 @@
               </p>
             </div>
           </div>
+
+          <div class="card">
+            <i class="bi bi-exclamation-triangle-fill"></i>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Safety Policies</h5>
+              <p class="card-text">
+                Written OSH policy statement approved by management.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <i class="bi bi-exclamation-triangle-fill"></i>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Hazard Identification & Risk Assessment (HIRA)</h5>
+              <p class="card-text">
+                Spotting risks before they cause accidents.
+              </p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -248,6 +285,20 @@
               periodically whenever the DOLE, other regulatory or government
               agencies and institutions promulgate new rules, guidelines and other issuances related to workers' safety
               and health.</p>
+
+              <p>Example: 
+                Training & Education – Mandatory orientation + regular safety seminars for workers.
+                
+                Health Programs – Pre-employment and periodic medical exams, mental health initiatives, first aid, PPE issuance.
+                
+                Emergency Preparedness – Fire drills, earthquake drills, evacuation plans, first-aid response teams.
+                
+                Accident Reporting & Investigation – Proper documentation, root-cause analysis, and corrective actions.
+                
+                Worker Participation – Safety committees with both employer and worker representatives.
+                
+                Compliance Monitoring – Regular audits, inspections, and submission of reports to DOLE/OSHA.
+              </p>
             <div class="col-12 d-flex align-items-center justify-content-center">
               <img src="./img/workplace.png" class="img-fluid mx-auto d-block" alt="..." width="200px" height="200px">
             </div>
